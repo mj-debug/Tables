@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE-ARRAY</title>
+    <style type="text/css">
+        body{
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #FFFFFF;
+            background-color: #252C39;
+        }
+        h2{
+            font-size: 40px;
+
+            /* Fallback: Set a background color. */
+            background-color: red;
+  
+            /* Create the gradient. */
+            background-image: linear-gradient(to right, #d39363, #ae9fce);
+  
+            /* Set the background size and repeat properties. */
+            background-size: 100%;
+            background-repeat: repeat;
+
+            /* Use the text as a mask for the background. */
+            /* This will show the gradient as a text color rather than element bg. */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+        table{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Student Report Sheet</h2>
+    <table border="2" style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr>
+           <th>S/N</th>
+           <th>Name</th>
+           <th>Math</th>
+           <th>Eng</th>
+           <th>Phy</th>
+           <th>Chem</th>
+           <th>Bio</th>
+           <th>Geo</th>
+           <th>Econs</th>
+           <th>Total</th>
+           <th>Average</th>
+        </tr>
+        <!-- Student One Score Sheet -->
+        <tr>
+            <td>1</td>
+            <td id="first_student_name"></td>
+            <td id="math_score_1"></td>
+            <td id="eng_score_1"></td>
+            <td id="phy_score_1"></td>
+            <td id="chem_score_1"></td>
+            <td id="bio_score_1"></td>
+            <td id="geo_score_1"></td>
+            <td id="econs_score_1"></td>
+            <td id="first_student_total_score"></td>
+            <td id="first_student_average_score"></td>
+        </tr>
+        <!-- Student Two Score Sheet -->
+        <tr>
+            <td>2</td>
+            <td id="second_student_name"></td>
+            <td id="math_score_2"></td>
+            <td id="eng_score_2"></td>
+            <td id="phy_score_2"></td>
+            <td id="chem_score_2"></td>
+            <td id="bio_score_2"></td>
+            <td id="geo_score_2"></td>
+            <td id="econs_score_2"></td>
+            <td id="second_student_total_score"></td>
+            <td id="second_student_average_score"></td>
+        </tr>
+        <!-- Student Three Score Sheet -->
+        <tr>
+            <td>3</td>
+            <td id="third_student_name"></td>
+            <td id="math_score_3"></td>
+            <td id="eng_score_3"></td>
+            <td id="phy_score_3"></td>
+            <td id="chem_score_3"></td>
+            <td id="bio_score_3"></td>
+            <td id="geo_score_3"></td>
+            <td id="econs_score_3"></td>
+            <td id="third_student_total_score"></td>
+            <td id="third_student_average_score"></td>
+        </tr>
+        <!-- Student four Score Sheet -->
+        <tr>
+            <td>4</td>
+            <td id="fourth_student_name"></td>
+            <td id="math_score_4"></td>
+            <td id="eng_score_4"></td>
+            <td id="phy_score_4"></td>
+            <td id="chem_score_4"></td>
+            <td id="bio_score_4"></td>
+            <td id="geo_score_4"></td>
+            <td id="econs_score_4"></td>
+            <td id="fourth_student_total_score"></td>
+            <td id="fourth_student_average_score"></td>
+        </tr>
+        <!-- Student five Score Sheet -->
+        <tr>
+            <td>5</td>
+            <td id="fifth_student_name"></td>
+            <td id="math_score_5"></td>
+            <td id="eng_score_5"></td>
+            <td id="phy_score_5"></td>
+            <td id="chem_score_5"></td>
+            <td id="bio_score_5"></td>
+            <td id="geo_score_5"></td>
+            <td id="econs_score_5"></td>
+            <td id="fifth_student_total_score"></td>
+            <td id="fifth_student_average_score"></td>
+        </tr>
+        <!-- Student Six Score Sheet -->
+        <tr>
+            <td>6</td>
+            <td id="sixth_student_name"></td>
+            <td id="math_score_6"></td>
+            <td id="eng_score_6"></td>
+            <td id="phy_score_6"></td>
+            <td id="chem_score_6"></td>
+            <td id="bio_score_6"></td>
+            <td id="geo_score_6"></td>
+            <td id="econs_score_6"></td>
+            <td id="sixth_student_total_score"></td>
+            <td id="sixth_student_average_score"></td>
+        </tr>
+        <!-- Student Seven Score Sheet -->
+         <tr>
+            <td>7</td>
+            <td id="seventh_student_name"></td>
+            <td id="math_score_7"></td>
+            <td id="eng_score_7"></td>
+            <td id="phy_score_7"></td>
+            <td id="chem_score_7"></td>
+            <td id="bio_score_7"></td>
+            <td id="geo_score_7"></td>
+            <td id="econs_score_7"></td>
+            <td id="seventh_student_total_score"></td>
+            <td id="seventh_student_average_score"></td>
+        </tr>
+        <!-- Student Eigth Score Sheet -->
+        <tr>
+            <td>8</td>
+            <td id="eigth_student_name"></td>
+            <td id="math_score_8"></td>
+            <td id="eng_score_8"></td>
+            <td id="phy_score_8"></td>
+            <td id="chem_score_8"></td>
+            <td id="bio_score_8"></td>
+            <td id="geo_score_8"></td>
+            <td id="econs_score_8"></td>
+            <td id="eigth_student_total_score"></td>
+            <td id="eigth_student_average_score"></td>
+        </tr>
+        <!-- Student Nine Score Sheet -->
+        <tr>
+            <td>9</td>
+            <td id="ninth_student_name"></td>
+            <td id="math_score_9"></td>
+            <td id="eng_score_9"></td>
+            <td id="phy_score_9"></td>
+            <td id="chem_score_9"></td>
+            <td id="bio_score_9"></td>
+            <td id="geo_score_9"></td>
+            <td id="econs_score_9"></td>
+            <td id="ninth_student_total_score"></td>
+            <td id="ninth_student_average_score"></td>
+        </tr>
+        <!-- Student Ten Score Sheet -->
+        <tr>
+            <td>10</td>
+            <td id="tenth_student_name"></td>
+            <td id="math_score_10"></td>
+            <td id="eng_score_10"></td>
+            <td id="phy_score_10"></td>
+            <td id="chem_score_10"></td>
+            <td id="bio_score_10"></td>
+            <td id="geo_score_10"></td>
+            <td id="econs_score_10"></td>
+            <td id="tenth_student_total_score"></td>
+            <td id="tenth_student_average_score"></td>
+        </tr>
+    </table>
+
+    <script src="./script.js"></script>
+</body>
+</html>
